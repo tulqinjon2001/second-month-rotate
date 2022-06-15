@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.box {
+  height: 100vh;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mini-box {
+  width: 200px;
+  height: 200px;
+  background-color: bisque;
+  border: solid 2px black;
+  box-shadow: -200px 0 red, 200px 0 black, 200px 200px salmon, -200px -200px snow, 200px -200px chartreuse, -200px 200px rgb(72, 18, 18), 0px 200px chocolate, 0px -200px rgb(215, 174, 124);
+  transition: transform 0.3s ease;
+}
+
+.mini-box:hover {
+  transform: rotate(360deg);
+}
